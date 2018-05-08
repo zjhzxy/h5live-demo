@@ -1,0 +1,29 @@
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>vide.js</title>
+<link rel="stylesheet" href="./video-js.min.css">
+<script src="./video-js.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <video
+        id="my-player"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="//vjs.zencdn.net/v/oceans.png"
+        data-setup='{}'>
+      <source src="../../test.mp4" type="video/mp4"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+            </p>
+    </video>
+<script type="text/javascript">
+  var player = videojs('my-player', {
+    width:400,
+    heigh:225
+  });
+</script>
+  </body>
+</html>
